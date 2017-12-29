@@ -1,0 +1,8 @@
+menu "spi board info"
+config GEC210_SPI_BOARD_INFO
+	tristate "gec210 spi board info"
+	default n
+	depends on SPI && CPU_S5PV210
+	help
+		for gec210 board-specific as spi board info
+endmenu

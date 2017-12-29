@@ -1,0 +1,10 @@
+menu "leds drivers for gec210"
+
+config GEC210_LEDS
+	tristate "GEC210 leds drivers"
+	default y
+	depends on CPU_S5PV210
+	help
+	 this is a driver for LEDs on GEC210
+
+endmenu
