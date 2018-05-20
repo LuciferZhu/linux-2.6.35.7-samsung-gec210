@@ -1,4 +1,4 @@
-/* linux/arch/arm/mach-s5pv210/include/mach/uncompress.h
+﻿/* linux/arch/arm/mach-s5pv210/include/mach/uncompress.h
  *
  * Copyright (c) 2010 Samsung Electronics Co., Ltd.
  *		http://www.samsung.com/
@@ -19,6 +19,8 @@
 static void arch_detect_cpu(void)
 {
 	/* we do not need to do any cpu detection here at the moment. */
+	fifo_mask = S5PV210_UFSTAT_TXMASK;
+	fifo_max = 255 << S5PV210_UFSTAT_TXSHIFT;
 }
 
 #endif /* __ASM_ARCH_UNCOMPRESS_H */
